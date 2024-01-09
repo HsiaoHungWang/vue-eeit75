@@ -1,13 +1,15 @@
 <script setup>
-   
+   import 'bootstrap/dist/css/bootstrap.min.css'
+   import 'bootstrap/dist/js/bootstrap.min.js'
+   import Navbar from './components/Navbar.vue'
 </script>
 
 <template>
-  <RouterLink to="/">首頁</RouterLink> |
-  <RouterLink to="/about">關於</RouterLink> | 
-  <RouterLink to="/contact">聯絡我們</RouterLink>
-  <hr />
+  <div class="container">
+ <Navbar></Navbar>
   <RouterView></RouterView>
+  </div>
+ 
  
   
 </template>
